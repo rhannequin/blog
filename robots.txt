@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://rhannequin.github.io/blog/sitemap.xml 
