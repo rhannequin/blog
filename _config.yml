@@ -99,3 +99,6 @@ google_analytics_tracking_id: UA-56090131-2
 
 # Facebook Like
 facebook_like: true
+
+# Gravatar
+gravatar_email: hello@rhannequ.in
