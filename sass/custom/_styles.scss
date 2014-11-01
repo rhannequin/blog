@@ -1,2 +1,45 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+body > nav {
+  form {
+    .search {
+      padding: 0.3em 0.5em;
+    }
+  }
+}
+
+aside.sidebar {
+
+  p.gravatar {
+    text-align: center;
+    margin-bottom: 0;
+
+    img {
+      @include shadow-box($border: $page-bg .3em solid);
+      border-radius: 50%;
+    }
+  }
+
+  .aside-follow p {
+    text-align: center;
+
+    a {
+      padding: 0 .4em;
+    }
+
+    img {
+      @include transition(opacity, .3s ease-out);
+      opacity: 0.5;
+
+      // Cancel bordel styles on asides images
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

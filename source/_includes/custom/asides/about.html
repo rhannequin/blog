@@ -1,4 +1,13 @@
 <section>
   <h1>About Me</h1>
-  <p>A little something about me.</p>
+  {% if site.gravatar_email %}
+    <p class="gravatar">
+      <img src="{% gravatar_image %}" alt="Gravatar of {{ site.author}} " title="Gravatar of {{ site.author }}" />
+    </p>
+  {% endif %}
+  <p>
+    I am a French web developer. I love code, trips and funk music.
+    <br>
+    <a href="http://rhannequ.in">rhannequ.in</a>
+  </p>
 </section>
